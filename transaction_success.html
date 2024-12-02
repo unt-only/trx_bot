@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Успешная транзакция</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Успешная транзакция</h1>
+    </header>
+
+    <div class="content">
+        <h2>Транзакция успешно выполнена!</h2>
+        <p>Ваши средства были успешно отправлены.</p>
+        <p>
+            <a id="txLink" href="" target="_blank">Посмотреть транзакцию на Tronscan</a>
+        </p>
+    </div>
+
+    <footer>
+        <a href="index.html">Вернуться на главную</a>
+    </footer>
+
+    <script>
+        // Получаем txid из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const txid = urlParams.get('txid');
+        
+        if (txid) {
+            // Создаем ссылку на Tronscan
+            const txLink = document.getElementById('txLink');
+            txLink.href = `https://tronscan.org/#/transaction/${txid}`;
+        } else {
+            alert("Ошибка: не найден txid!");
+        }
+    </script>
+</body>
+</html>

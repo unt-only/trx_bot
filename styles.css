@@ -1,0 +1,162 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: 20px;
+    border-top: 2px solid #333;
+}
+
+/* Стилизация кнопок */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 100%; 
+    max-width: 600px; 
+    font-size: 1.2em;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    text-align: center; 
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+/* Метки для полей */
+label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #fff;
+    display: block; 
+    text-align: center;
+}
+
+/* Кнопка "Вернуться на главную" */
+footer a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+footer a:active {
+    transform: scale(1);
+}
+
+/* Стиль для страницы баланса */
+.content {
+    padding: 40px;
+}
+
+.content h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #e74c3c;
+    transition: opacity 0.3s ease;
+}
+
+#status.success {
+    color: #2ecc71;
+}
+
+#status.error {
+    color: #e74c3c;
+}
+
+/* Стиль для кнопок навигации */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #444;
+    transform: scale(1.1);
+}
